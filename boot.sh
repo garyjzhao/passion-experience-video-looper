@@ -1,5 +1,4 @@
 #!/bin/sh
 
 sleep 10
-tput civis invisible
-sudo python /home/pi/pe/pe.py
+omxplayer --loop /home/pi/pe/PE2016.mp4
