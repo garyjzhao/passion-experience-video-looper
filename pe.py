@@ -10,6 +10,6 @@ while 1:
   os.system("clear")
 
   FNULL = open(os.devnull, "w")
-  call(["omxplayer", "/opt/vc/src/hello_pi/hello_video/test.h264"], stdout=FNULL)
+  call(["omxplayer", "/home/pi/pe/PE2016.mp4"], stdout=FNULL)
 
 # run `tput cnorm normal` to restore terminal
