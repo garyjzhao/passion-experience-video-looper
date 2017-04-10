@@ -1,7 +1,8 @@
 # passion-experience-pi-2016
 Passion Experience 2016 Raspberry Pi project
 
-Summary: This project sets up a Raspberry Pi to function as a video looper, utilizing omxplayer to run the video and /etc/rc.local to start up the script. 
+Summary: 
+This project sets up a Raspberry Pi to function as a video looper, utilizing omxplayer to run the video and /etc/rc.local to start up the script. 
 
 The video file for this project can be obtained here: https://drive.google.com/open?id=0B6MAa53BN12CVUpPZVQ5YlBUR28
 
