@@ -1,5 +1,5 @@
-# passion-experience-pi-2016
-Passion Experience 2016 Raspberry Pi project
+# passion-experience-pi-video-looper
+Passion Experience Raspberry Pi Video Looper
 
 **Summary**
 
