@@ -1,5 +1,4 @@
-# passion-experience-pi-video-looper
-Passion Experience Raspberry Pi Video Looper
+# Passion Experience Video Looper
 
 **Summary**
 
