@@ -8,7 +8,7 @@ This project sets up a Raspberry Pi to function as a video looper, utilizing omx
 
 Noteable differences: I have the `boot.sh` script in the same directory as the video, whereas Jon had his video and `boot.sh` in different directories.
 
-### Steps to Update Raspberry Pi with the latest Video file
+## Steps to Update Raspberry Pi with the latest Video file
 
 Transferring video file to the Pi
 1. Navigate to the directory containing the updated video file on your own computer
