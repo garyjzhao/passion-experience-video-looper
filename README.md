@@ -14,7 +14,9 @@ Noteable differences: I have the `boot.sh` script in the same directory as the v
 1. Navigate to the directory containing the updated video file on your own computer
 2. Identify the Raspberry Pi you will like to access and its IP Address (written on the post-its)
 3. In Terminal, run `scp VIDEO-FILE-NAME.mp4 pi@<INSERT IP ADDRESS OF PI>:pe/`
-4. Confirm that the new video is in `/home/pi/pe/` directory
+4. Enter `yes` to the first prompt
+5. Enter `raspberry` for password
+6. The file should start transferring. Once it is done, confirm that the new video is in `/home/pi/pe/` directory
 
 ### Update the Pi Script to run video on boot
 1. In the `boot.sh`, change `/home/pi/pe/VIDEO-NAME-GOES-HERE.mp4` to the video file name
