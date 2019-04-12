@@ -2,30 +2,28 @@
 
 ## Summary
 
-This ReadME is specifically for 2019 Passion Experience.
+This readme is specifically for 2019 Passion Experience.
 
-This project sets up a Raspberry Pi to function as a video looper, utilizing omxplayer to run the video and /etc/rc.local to start up the script.
+This project sets up a Raspberry Pi to function as a video looper, utilizing omxplayer to run the video and /etc/rc.local to start up the script. Refer to [Jon Yen's Passion Experience Video Looper](https://github.com/jonyen/passion-experience-video-looper) for inital set up.
 
-This ReadME is a fork of [Jon Yen's Passion Experience Video Looper](https://github.com/jonyen/passion-experience-video-looper). Refer to Jon Yen's ReadME for initial set up.
+Noteable differences: I have the `boot.sh` script in the same directory as the video, whereas Jon had his video and `boot.sh` in different directories.
 
+### Steps to Update Raspberry Pi with the latest Video file
 
-### Steps to Update Video file
-1. Identify the Raspberry Pi you will like to access and its IP Address (written on the post-its)
-2. `scp path/to/File.mp4 pi@<INSERT IP ADDRESS OF PI>:pe/`
-3.
+Transferring video file to the Pi
+1. Navigate to the directory containing the updated video file on your own computer
+2. Identify the Raspberry Pi you will like to access and its IP Address (written on the post-its)
+3. In Terminal, run `scp VIDEO-FILE-NAME.mp4 pi@<INSERT IP ADDRESS OF PI>:pe/`
+4. Confirm that the new video is in `/home/pi/pe/` directory
 
-
-On each of the Raspberry Pi, there is a post-it with its IP Address written on it.
-
-
-Update the PE files
-1. Write /home/pi/boot.sh with the file included in this Github. Change the `.mp4` file to the video that will run on the Pi.
-2. `chmod 644 /home/pi/boot.sh`
-3. Update /etc/rc.local to run `/home/pi/boot.sh &` (note the ampersand to run it in the background)
-4. `reboot`
+Update the Pi Script to run video on boot
+1. In the `boot.sh`, change `/home/pi/pe/VIDEO-NAME-GOES-HERE.mp4` to the video file name
+2. Run `chmod 644 /home/pi/pe/boot.sh`
+3. `reboot`
+4. Once it has rebooted and loaded the OS, The video will autoplay in full screen after 10 seconds
 
 **Troubleshooting**
 
-If you wish to change the video file, you should obtain the IP address to the Raspberry Pi (this can be done by connecting another machine or device to the ethernet cable to determine the IP address, then plugging the Raspberry Pi back into the cable), then attempt to SSH into the machine and update the file via SCP. If unable to SSH into the machine, then you will need to re-image the microSD card and set it up from scratch. Instructions for setting up the image can be found here: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+If you are unable to SSH into the machine, check the Raspberry Pi Configuration > Interface to see if SSH is enabled.
 
-Depending on what configuration of Raspbian you have, you may be able to bypass /etc/rc.local on startup by pressing "Shift" during boot.
+If you are still unable to SSH, then you will need to re-image the microSD card and set it up from scratch. Instructions for setting up the image can be found here: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
