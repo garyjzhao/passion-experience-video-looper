@@ -1,13 +1,17 @@
-# Passion Experience Video Looper
+# 2019 Passion Experience Video Looper
 
 ## Summary
 
+This ReadME is specifically for 2019 Passion Experience.
+
 This project sets up a Raspberry Pi to function as a video looper, utilizing omxplayer to run the video and /etc/rc.local to start up the script.
 
-### Steps
-Accessing the Raspberry Pis.
-1. Identify the Raspberry Pi you will like to access and its IP Address
-2. `ssh pi@<INSERT IP ADDRESS HERE>`
+This ReadME is a fork of [Jon Yen's Passion Experience Video Looper](https://github.com/jonyen/passion-experience-video-looper). Refer to Jon Yen's ReadME for initial set up.
+
+
+### Steps to Update Video file
+1. Identify the Raspberry Pi you will like to access and its IP Address (written on the post-its)
+2. `scp path/to/File.mp4 pi@<INSERT IP ADDRESS OF PI>:pe/`
 3.
 
 
