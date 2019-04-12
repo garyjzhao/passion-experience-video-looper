@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sleep 10
-omxplayer --loop --aspect-mode=fill --no-osd /home/pi/pe/PE2016-Golgotha_Clouds_LOOP.mp4
+omxplayer -o local --loop --aspect-mode=fill --no-osd /home/pi/pe/VIDEO-NAME-GOES-HERE.mp4
 
 ##!/bin/sh -x
 #trap exit 1 SIGINT SIGKILL SIGTERM
